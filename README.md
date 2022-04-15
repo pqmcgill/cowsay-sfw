@@ -1,4 +1,4 @@
-# cowsay
+# cowsay-sfw
 
 ````
  __________________
@@ -11,23 +11,22 @@
                 ||     ||
 ````
 
-cowsay is a configurable talking cow, originally written in Perl by [Tony Monroe](https://github.com/tnalpgge/rank-amateur-cowsay)
+cowsay is a configurable talking cow, originally written in Perl by [Tony Monroe](https://github.com/tnalpgge/rank-amateur-cowsay).
+cowsay-sfw was forked from cowsay@1.5.0 **to remove NSFW content**.
 
 This project is a translation in JavaScript of the original program and an attempt to bring the same silliness to node.js.
 
-This project was forked to remove NSFW cows from the list
-
 ## Install
 
-    npm install -g cowsay
+    npm install -g cowsay-sfw
 
 ## Usage
 
-    cowsay JavaScript FTW!
+    cowsay-sfw JavaScript FTW!
 
-or
+TODO:
 
-    cowthink node.js is cool
+    cowthink-sfw node.js is cool // Does not currently exist
 
 It acts in the same way as the original cowsay, so consult `cowsay(1)` or run `cowsay -h`
 
@@ -52,7 +51,7 @@ It acts in the same way as the original cowsay, so consult `cowsay(1)` or run `c
 
 cowsay can be used as any other npm dependency
 ```js
-var cowsay = require("cowsay");
+var cowsay = require("cowsay-sfw");
 
 console.log(cowsay.say({
     text : "I'm a moooodule",
@@ -89,7 +88,7 @@ cowsay.list(get_cows);
 
 #### Typescript examples:
 ```ts
-import * as cowsay from "cowsay"
+import * as cowsay from "cowsay-sfw"
 
 let output: string = cowsay.say({ text: 'Hello from typescript!' });
 
@@ -112,7 +111,7 @@ cowsay.list(get_cows);
 
 importing the `IOptions` interface directly:
 ```ts
-import { IOptions } from "cowsay" // optional
+import { IOptions } from "cowsay-sfw" // optional
 
 let opts: IOptions = {
     text: "Hello from TypeScript!",
@@ -126,14 +125,14 @@ console.log(cowsay.say(opts));
 
 ## Pipe from standard input
 
-    echo please repeat | cowsay
+    echo please repeat | cowsay-sfw
 
 ## Usage in the browser
 
 cowsay works in your browser too with rollup / webpack / browserify / you name it.
 
 ```js
-import { say } from 'cowsay';
+import { say } from 'cowsay-sfw';
 
 console.log(say({ text: 'grazing in the browser' }));
 ```
@@ -141,7 +140,7 @@ console.log(say({ text: 'grazing in the browser' }));
 You can customize the cow by importing the relevant one
 
 ```js
-import { think, SQUIRREL } from 'cowsay';
+import { think, SQUIRREL } from 'cowsay-sfw';
 
 console.log(think({
   text: 'grazing in the browser',
