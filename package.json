@@ -1,7 +1,7 @@
 {
-  "name": "cowsay",
+  "name": "cowsay-sfw",
   "version": "1.5.0",
-  "description": "cowsay is a configurable talking cow",
+  "description": "cowsay is a configurable talking cow. This fork is SFW",
   "keywords": [
     "cow",
     "cowsay",
